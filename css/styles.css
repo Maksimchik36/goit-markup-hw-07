@@ -40,11 +40,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* -------HEADER----- */
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
 
 /*----отключение подчеркивания в ссылках----*/
 .link {
@@ -58,7 +53,9 @@ img {
   list-style: none;
 }
 
-.logo {
+/* -------HEADER----- */
+
+/* .logo {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: Raleway, sans-serif;
@@ -71,6 +68,10 @@ img {
 
 .logo > span {
   color: var(--accent-color);
+} */
+
+/* .header {
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-list {
@@ -97,10 +98,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* Выделяет название текущей страницы */
-.nav-link.current {
+/* .nav-link.current {
   color: var(--accent-color);
 }
 
@@ -136,10 +137,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* Подсветка интерактивных элементов при наведении */
-.header a:hover,
+/* .header a:hover,
 .header a:focus,
 .footer-link:hover,
 .footer-link:focus {
@@ -149,23 +150,23 @@ img {
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 
 /* выделение иконок при hover и focus родителя */
-.header a:hover .contacts-icon,
+/* .header a:hover .contacts-icon,
 .header a:focus .contacts-icon {
   fill: currentColor;
 }
 
-.container.main {
+.container.header {
   display: flex;
   align-items: center;
-}
+} */
 
 /* -------------MAIN------------------ */
 /* ----Решения для бизнеса--- */
 
-.solutions {
+/* .solutions {
   background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -205,10 +206,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
-}
+} */
 
 /* ----Наши особенности----*/
-.feature {
+/* .feature {
   padding-bottom: 0;
 }
 
@@ -260,11 +261,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
-}
+} */
 
 /* ----Наша специализация---- */
 
-.specialization-title {
+/* .specialization-title {
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -303,10 +304,10 @@ img {
   background: rgba(47, 48, 58, 0.8);
   padding: 27px 0;
   margin: 0;
-}
+} */
 
 /* ----Наша команда---- */
-.team {
+/* .team {
   background-color: #f5f4fa;
 }
 
@@ -448,10 +449,10 @@ img {
 .clients-link:hover {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 
 /* ---footer--- */
-footer {
+/* footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -488,7 +489,7 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ----------Portfolio------------ */
 
