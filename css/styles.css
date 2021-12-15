@@ -1,5 +1,5 @@
 /* присвоение значений переменным*/
-:root {
+/* :root {
   --main-color: #212121;
   --second-color: #757575;
   --third-color: #ffffff;
@@ -13,24 +13,24 @@
   --shadow-portfolio-cards: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --shadow-button-footer: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
-body {
+/* body {
   font-family: Roboto, sans-serif;
   color: var(--main-color);
   background-color: #ffffff;
-}
+} */
 
 /* контейнер для структурирования и позиционирования секций */
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -39,19 +39,33 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 /*----отключение подчеркивания в ссылках----*/
-.link {
+/* .link {
   text-decoration: none;
-}
+} */
 
 /*----отключение точек в списках----*/
-.list {
+/* .list {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+} */
+
+/* Удаляет элементы из видимой структуры HTML-кода, без потери логической структурной разметки, которая очень важна для "читалок" */
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
 
 /* -------HEADER----- */
 
@@ -493,7 +507,7 @@ address {
 
 /* ----------Portfolio------------ */
 
-.portfolio button {
+/* .portfolio button {
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
@@ -533,28 +547,14 @@ address {
   color: var(--third-color);
   background-color: var(--accent-color);
   box-shadow: var(--shadow-portfolio-buttons);
-}
-
-/* Удаляет элементы из видимой структуры HTML-кода, без потери логической структурной разметки, которая очень важна для "читалок" */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+} */
 
 /* Сброс наклонного шрифта, который автоматом ставится в этом тэге */
-address {
+/* address {
   font-style: normal;
-}
+} */
 
-.list-buttons {
+/* .list-buttons {
   display: flex;
   margin-bottom: 34px;
   justify-content: center;
@@ -645,9 +645,9 @@ address {
 .activities-link:hover,
 .activities-link:focus {
   box-shadow: var(--shadow-portfolio-cards);
-}
+} */
 
-address {
+/* address {
   margin-bottom: 9px;
 }
 
@@ -735,7 +735,7 @@ footer button:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--third-color);
-}
+} */
 
 /*при фокусе делает обводку inputa в форме футера. в дз не было указано */
 /* .subscription-input:focus {
@@ -743,7 +743,7 @@ footer button:focus {
   outline: none;
 } */
 
-.subscription-input::placeholder {
+/* .subscription-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -759,9 +759,9 @@ footer button:focus {
 .subscription-field {
   display: flex;
   align-items: center;
-}
+} */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -962,11 +962,11 @@ textarea::placeholder {
 .modal .send:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
+} */
 
 /* скрывает элемент */
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
