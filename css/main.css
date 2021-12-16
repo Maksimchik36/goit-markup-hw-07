@@ -20,7 +20,7 @@ body {
   --shadow-button-footer: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.logo, footer .logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,19 +84,24 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.nav-list {
+.header .container {
   display: flex;
+  align-items: center;
 }
 
-.nav {
+.header__navigation {
   margin-left: 93px;
 }
 
-.nav-item:not(:last-child) {
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.navigation__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -109,11 +114,15 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.nav-link.current::after {
+.navigation__link--current {
+  color: var(--accent-color);
+}
+
+.navigation__link--current::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -124,16 +133,16 @@ address {
   border-radius: 2px;
 }
 
-.contacts-list {
+.header__contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -146,42 +155,31 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header a:hover,
-.header a:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.contacts-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header a:hover .contacts-icon,
-.header a:focus .contacts-icon {
-  fill: currentColor;
+.logo__text {
+  color: var(--accent-color);
 }
 
-.container.header {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   color: #000000;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo > span {
+.header__logo:hover, .header__logo:focus {
   color: var(--accent-color);
 }
 
-.header .logo:hover,
-.header .logo:focus {
-  color: var(--accent-color);
-}
-
-footer .logo {
+.footer__logo {
   display: block;
   padding: 0;
   margin: 0;
@@ -463,19 +461,24 @@ footer {
   padding-bottom: 60px;
 }
 
-footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-address {
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
+  margin-bottom: 9px;
 }
 
-.footer-link {
+.footer__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -483,16 +486,11 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
 
-address {
-  margin-bottom: 9px;
-}
-
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -510,10 +508,6 @@ footer .networks-list {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-color);
-}
-
-.data-contacts {
-  margin-right: 70px;
 }
 
 footer .networks {
@@ -735,19 +729,24 @@ footer {
   padding-bottom: 60px;
 }
 
-footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-address {
+.footer__contacts {
+  margin-right: 70px;
+}
+
+.footer__address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
+  margin-bottom: 9px;
 }
 
-.footer-link {
+.footer__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -755,16 +754,11 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
 
-address {
-  margin-bottom: 9px;
-}
-
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -782,10 +776,6 @@ footer .networks-list {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-color);
-}
-
-.data-contacts {
-  margin-right: 70px;
 }
 
 footer .networks {
