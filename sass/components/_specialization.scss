@@ -1,4 +1,4 @@
-.specialization-title {
+.specialization__title {
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -10,19 +10,19 @@
   text-align: center;
 }
 
-.specialization-list {
+.specialization__list {
   display: flex;
 }
 
-.specialization-item:not(:last-child) {
+.specialization__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.specialization-wrapper {
+.specialization__wrapper {
   position: relative;
 }
 
-.specialization-text {
+.specialization__text {
   position: absolute;
   left: 0;
   bottom: 0;
