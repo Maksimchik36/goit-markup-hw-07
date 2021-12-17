@@ -2,7 +2,7 @@
   background-color: #f5f4fa;
 }
 
-.team-title {
+.team__title {
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
@@ -14,28 +14,28 @@
   text-align: center;
 }
 
-.team-list {
+.team__list {
   display: flex;
 }
 
-.team-item {
+.team__item {
   width: 270px;
   box-shadow: var(--shadow-team-cards);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--third-color);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-information {
+.team__information {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
 
-.team-personality {
+.team__personality {
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -46,7 +46,7 @@
   letter-spacing: 0.03em;
 }
 
-.team-positions {
+.team__positions {
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
@@ -57,21 +57,21 @@
   color: var(--second-color);
 }
 
-.team .networks-list {
+.team__networks {
   display: flex;
   justify-content: center;
 }
 
-.networks-item {
+.networks__item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.networks-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.networks-link {
+.networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,15 +81,15 @@
   fill: var(--primary-icons-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--third-color);
+  }
 }
 
-.team .networks-link:hover,
-.team .networks-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--third-color);
-}
-
-.networks-icon {
+.networks__icon {
   width: 20px;
   height: 20px;
 }
